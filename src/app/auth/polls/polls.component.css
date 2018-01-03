@@ -1,0 +1,18 @@
+.b-question a {
+  text-decoration: none;
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+  margin: 8px 0;
+  display: block;
+
+}
+
+.b-question a:hover {
+  color: #0067a5;
+}
+
+.b-button-view-poll {
+  padding-top: 5px;
+}

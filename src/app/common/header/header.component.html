@@ -1,0 +1,31 @@
+<header class="b-main-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="logo" class="b-logo">
+          <a href="">
+            <img src="./../../../assets/wt-white.png" alt="webtraining logo" class="img-responsive">
+          </a>
+
+        </div>
+        <nav class="b-main-navigation">
+          <ul class="b-main-navigation__items">
+            <li class="b-main-navigation__item">
+              <a  routerLink="/encuestas"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  class="b-main-navigation__link">
+                <span class="b-main-navigation__text">Encuestas</span>
+              </a>
+            </li>
+            <li class="b-main-navigation__item" *ngIf="_authService.isLoggedIn()">
+              <a href="" class="b-main-navigation__link" (click)="logout()">
+                <span class="b-main-navigation__text" >Cerrar sesión</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
